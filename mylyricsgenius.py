@@ -2,7 +2,7 @@ import lyricsgenius
 import re
 
 APP_NAME = "LyricGrabber"
-API_WEBSITE_URL = "https://github.com/bturcott14/PlaylistToOnSong"
+API_WEBSITE_URL = "https://github.com/BenTurcotte/PlaylistToOnSong"
 
 __genius = lyricsgenius.Genius(CLIENT_ACCESS_TOKEN)
 
