@@ -8,14 +8,9 @@ import myazlyrics as az
 import time
 import mylyricsgenius as lg
 
-# # keyring.set_password("api_credentials", "spotify_client_id", "dfa067cc028d4431bf88d78e5cfb5752")
-# # keyring.set_password("api_credentials", "spotify_client_secret", "b47a658571f743c79d129307c595a45e")
-
 # get_password("KeyChainItem.Name", "keychainitem.Account")
-# # id = keyring.get_password("SpotifyApiClientId", "client_id")
-# # secret = keyring.get_password("SpotifyApiClientSecret", "client_secret")
-id = "dfa067cc028d4431bf88d78e5cfb5752"
-secret = "b47a658571f743c79d129307c595a45e"
+id = keyring.get_password("SpotifyApiClientId", "client_id")
+secret = keyring.get_password("SpotifyApiClientSecret", "client_secret")
 
 client_credentials_manager = SpotifyClientCredentials(client_id=id, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
