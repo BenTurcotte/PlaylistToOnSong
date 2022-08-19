@@ -3,9 +3,6 @@ import re
 
 APP_NAME = "LyricGrabber"
 API_WEBSITE_URL = "https://github.com/bturcott14/PlaylistToOnSong"
-CLIENT_ID = "Hyie_kOLnGedncbqb-HwEuBUZSyyIfCFf4-XBKf6iNrJ08E38fdxp9PS9e7yQ6cU"
-CLIENT_SECRET = "VvqADFh4mv93hn2BW8pS2C8VrTU6RJBJI2lYxqpJvr4wXB3S17izpkk4v2XVMrH4UOc87RpYujdEGhUrOeUUJg"
-CLIENT_ACCESS_TOKEN = "yAsYZZO5FfE4asKPLPtcaAFDCE6YOcKOA0EZR4OV7OawABHLZP2JBRqESeh5efMh"
 
 __genius = lyricsgenius.Genius(CLIENT_ACCESS_TOKEN)
 
